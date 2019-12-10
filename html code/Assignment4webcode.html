@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Rohma Khan Assignment 4 </title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ div.transbox{
+   margin: 30px;
+   background-color: #ffffff;
+   border: 1px solid black;
+   opacity: 0.9;
+   filter: alpha(opacity=60);
+ } 
+ div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.ul_class {
+  width: 100%;
+  display:block;
+  text-align: center;
+  }
+.li_class {
+    width: 40%;
+    display:inline-block;
+    }
+
+  </style>
+</head>
+
+<body>
+    <style>
+        body {
+        background-image: url("backgroundsun.png");
+        }
+    </style>
+<div class="background">
+  <div class="transbox">
+<h1 style="text-align:center;">  Song Word Frequency: Pocketful of Sunshine by Natasha Bedingfield <br> Rohma Khan Assignment 4</h1>
+  </div>
+</div>
+<figure>
+<img src="Image4 copy.png" alt="JavaFX Generated Image 1" class="center" style="width:50%"> 
+<figcaption style="text-align:center;"><b>JavaFX PieChart Word Frequency</b></figcaption>
+</figure>
+
+<div class="background">
+  <div class="transbox">
+<h2 style="text-align:center;"> Why this song?</h2>
+  <p>
+  I picked this song because it is an iconic karoke song that somehow I still always get the words wrong to. I did not understand because the words are mostly chorus! The frequency was surprising because 'sunshine' does not show up high on the list. It makes me feel better about not being able to remember the lyrics because neither 'pocket' nor 'sunshine' is sung very often. 
+  </p>
+</div>
+</div>
+<figure>
+<ul class="ul_class">
+  <li class="li_class"><img src="Image2_copy.png" alt="WordCloud Generated Image 2" style="width:100%"></li>  
+  <li class="li_class"><img src="image_copy.png" alt="WordCloud Generated Image 1" style="width:100%"></li> 
+ </ul>
+ <figcaption style="text-align:center;"> <b>Kumo Word Cloud Circle Frequency Images</b></figcaption>
+</figure>
+
+<div class="background">
+  <div class="transbox">
+<h2 style="text-align:center;">How did I do this?</h2>
+<p>I used a dictionary to write the code in Java to create a word frequency of our song lyrics. A dictionary seemed like the best data structure for this task because its use of a key-value pair made it easy to keep track of the number of times a word appeared in the song. Alternatively I could have used a Queue, LinkedList, Graph, Stack, Tree, or Array. None of those seemed like a good option, however. I could have created an object called word and given it a private int value that kept track of the number of times each word was used and then used a Linkedlist but a HashMap was easier to implement. I then printed the value: key pair on a separate document. I made sure to remove punctuation and typeCast everything to lower case. This means that it is a not counting the same word as different words because of something like a comma or a capitalized letter.
+ <br>
+I am a beginner at coding. This homework assignment was the perfect tool to practice different data visualization tools. I used 2 different tools. It was suggested by our Professor that we use maven for this assignment. I had no idea what Maven was or why it would even be used and no amount of googling was helping me out. Luckily I had a friend of mine (shout-out to Kevin!) who had some experience in Maven. He helped me download Maven (first I had to download homebrew) and then how to use pom file to create a build using WordCloud from kennycason.kumo. After that my computer died and I had to continue on my own at home. After many, many errors (some compiling some just my own mistakes) and much more googling I got the kumo visualization tools to work. I had to use the output text file I had printed in the initial creation of our frequency dictionary. I wanted to practice so I used two different types of images offered from the package. Those are the images labeled image 1 and image 2. Then because I am still learning I decided to also create two images using JavaFX. I created a bar graph and a pie chart using JavaFX from the HashMap this time. The bar graph I could create directly from the HashMap but the Pie Chart I created using a List of PieChart Data objects. I am quite happy with the practice and knowledge I learned doing this Assignment. I would also llike to thank my other friend Shahzoda for helping me with Github.
+</p>
+  </div>
+</div>
+<figure>
+<img src="Image3 copy.png" alt="JavaFX Generated Image 2" class="center" style="width:60%">
+<figcaption style="text-align:center;"> <b>JavaFX Bar Graph Word Frequency</b></figcaption>
+</figure>
+<div class="background">
+  <div class="transbox">
+<h2 style="text-align:center;">What would I change? Suggestions welcome!</h2>
+<p>
+There is a lot I would improve on if I had more time to work on the project. I could not figure out how to turn off word filters in the kumo data visualization tool. As a result the images are missing words such as 'and' or 'me' which is a shame. The JavaFX charts show the complete frequency count which is why I am happy I made them. I would also try to see if I could create an interactive image. This would mean I could no longer host on git however and I would have to practice with something like React. Overall if I had more time I would also improve my code. I am very afraid that the maven/kumo software is held together with a a shoelace string and I definitely need to fix it. I would also optimize the code to create the JavaFX images.
+</p>
+</div>
+</div>
+
+<div class="background">
+    <div class="transbox">
+  <h2 style="text-align:center;">Source Code</h2>
+  <p>
+    <a href="https://github.com/Rohma-Khan/DSAssignment4">Here</a> is my source code on git! It includes everything I mentioned above.
+  </p>
+  </div>
+  </div>
+
+</body>
+</html>
